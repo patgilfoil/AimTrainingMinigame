@@ -1,0 +1,24 @@
+var NAVTREEINDEX0 =
+{
+"_clickable_target_behavior_8cs.html":[1,0,0],
+"_menu_behavior_8cs.html":[1,0,1],
+"_scorekeeping_behavior_8cs.html":[1,0,2],
+"annotated.html":[0,0],
+"class_clickable_target_behavior.html":[0,0,0],
+"class_clickable_target_behavior.html#a05dd5e808dc55cfcb548526709819ebc":[0,0,0,2],
+"class_clickable_target_behavior.html#a322cdb41ecd4f9c7616fcfef315e7537":[0,0,0,1],
+"class_clickable_target_behavior.html#aefa07feadc16df743a6169dc4a0686f6":[0,0,0,0],
+"class_menu_behavior.html":[0,0,1],
+"class_menu_behavior.html#a9530fc8e3b7d6934661bf414f8feb4b0":[0,0,1,0],
+"class_scorekeeping_behavior.html":[0,0,2],
+"class_scorekeeping_behavior.html#a171092f3277a690e9c7d3030e3c0568d":[0,0,2,0],
+"class_scorekeeping_behavior.html#a7725157459ae3ce69226cfef08c608f1":[0,0,2,1],
+"classes.html":[0,1],
+"files.html":[1,0],
+"functions.html":[0,3,0],
+"functions_func.html":[0,3,1],
+"functions_vars.html":[0,3,2],
+"hierarchy.html":[0,2],
+"index.html":[],
+"pages.html":[]
+};
