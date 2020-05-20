@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['score_6',['score',['../class_scorekeeping_behavior.html#a171092f3277a690e9c7d3030e3c0568d',1,'ScorekeepingBehavior']]],
-  ['scorekeeper_7',['scorekeeper',['../class_clickable_target_behavior.html#a322cdb41ecd4f9c7616fcfef315e7537',1,'ClickableTargetBehavior']]],
-  ['scorekeepingbehavior_8',['ScorekeepingBehavior',['../class_scorekeeping_behavior.html',1,'']]],
-  ['scorekeepingbehavior_2ecs_9',['ScorekeepingBehavior.cs',['../_scorekeeping_behavior_8cs.html',1,'']]]
+  ['restartbehavior_6',['RestartBehavior',['../class_restart_behavior.html',1,'']]],
+  ['restartbehavior_2ecs_7',['RestartBehavior.cs',['../_restart_behavior_8cs.html',1,'']]],
+  ['restartbutton_8',['restartButton',['../class_restart_behavior.html#a6c2e026996ce37982dc6711fe645c8a8',1,'RestartBehavior']]],
+  ['restartgame_9',['RestartGame',['../class_restart_behavior.html#a097326fa64503dc6d0cbfab1a58cc6fe',1,'RestartBehavior']]]
 ];

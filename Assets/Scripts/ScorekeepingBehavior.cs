@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-/*
+/**
  * A class that tracks the score for the UI to display
  */
 public class ScorekeepingBehavior : MonoBehaviour

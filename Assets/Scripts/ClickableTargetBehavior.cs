@@ -8,22 +8,13 @@ using UnityEngine.UI;
  */
 
 [RequireComponent(typeof(ScorekeepingBehavior))]
-[RequireComponent(typeof(Text))]
+[RequireComponent(typeof(TimerBehavior))]
 public class ClickableTargetBehavior : MonoBehaviour
 {
     /*
      * The amount of hits a target has taken
      */
-    private int targetHits;
-    /*
-     * The amount of time that has passed
-     */
-    private float time;
-    /*
-     * The amount of time between the last target hit and the current target hit
-     */
-    private float timeCheckAfterHit;
-
+    public int targetHits;
     /*
      * The maximum amount of hits a target can take
      */
@@ -33,9 +24,9 @@ public class ClickableTargetBehavior : MonoBehaviour
      */
     public ScorekeepingBehavior scorekeeper;
     /*
-     * The reference to a text UI object to display the timer
+     * The reference to the Timer object
      */
-    public Text timer;
+    public TimerBehavior timer;
 
     // Start is called before the first frame update
     void Start()
@@ -50,17 +41,19 @@ public class ClickableTargetBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //update timer
-        time += Time.deltaTime;
-        timer.text = "Time: " + time;
+
     }
 
     //function called when target object is clicked
     private void OnMouseDown()
     {
         //if target is clicked with LMB and target has not reached maximum number of hits
-        if (Input.GetMouseButtonDown(0) && targetHits < maxTargetHits)
+        if (Input.GetMouseButtonDown(0) && targetHits <= maxTargetHits)
         {
+            if (targetHits == 0 || targetHits == maxTargetHits)
+            {
+                timer.ToggleTimer();
+            }
             //set position to a random position in a 3.5x4 unit square
             float rand1 = Random.Range(-3.5f, 3.5f);
             float rand2 = Random.Range(-4.0f, 4.0f);
@@ -68,10 +61,10 @@ public class ClickableTargetBehavior : MonoBehaviour
             transform.position = newPos;
             //increment the amount of times the target has been hit
             targetHits++;
-            //update the time after hits
-            timeCheckAfterHit = Time.deltaTime - timeCheckAfterHit;
             //update score
-            scorekeeper.score += (100 / Time.deltaTime);
+            float scoreMulti = timer.TimerCutoff();
+            scorekeeper.score = scorekeeper.score + (100 - (10 * scoreMulti));
+            Debug.Log(scorekeeper.score + "is score");
         }
     }
 }
