@@ -30,7 +30,6 @@ public class RestartBehavior : MonoBehaviour
         if (target.targetHits == target.maxTargetHits)
         {
             restartButton.gameObject.SetActive(true);
-            Debug.Log("Button should appear");
         }
     }
 

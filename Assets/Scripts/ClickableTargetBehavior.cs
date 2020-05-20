@@ -33,7 +33,7 @@ public class ClickableTargetBehavior : MonoBehaviour
     {
         //start at a random position
         float rand1 = Random.Range(-3.5f, 3.5f);
-        float rand2 = Random.Range(-4.0f, 4.0f);
+        float rand2 = Random.Range(-1.5f, 1.5f);
         Vector3 newPos = new Vector3(rand1, transform.position.y, rand2);
         transform.position = newPos;
     }
@@ -48,23 +48,23 @@ public class ClickableTargetBehavior : MonoBehaviour
     private void OnMouseDown()
     {
         //if target is clicked with LMB and target has not reached maximum number of hits
-        if (Input.GetMouseButtonDown(0) && targetHits <= maxTargetHits)
+        if (Input.GetMouseButtonDown(0) && targetHits < maxTargetHits)
         {
-            if (targetHits == 0 || targetHits == maxTargetHits)
-            {
-                timer.ToggleTimer();
-            }
-            //set position to a random position in a 3.5x4 unit square
-            float rand1 = Random.Range(-3.5f, 3.5f);
-            float rand2 = Random.Range(-4.0f, 4.0f);
-            Vector3 newPos = new Vector3(rand1, transform.position.y , rand2);
-            transform.position = newPos;
             //increment the amount of times the target has been hit
             targetHits++;
             //update score
             float scoreMulti = timer.TimerCutoff();
             scorekeeper.score = scorekeeper.score + (100 - (10 * scoreMulti));
-            Debug.Log(scorekeeper.score + "is score");
+            if (targetHits == 1 || targetHits == maxTargetHits)
+            {
+                timer.ToggleTimer();
+            }
+            //set position to a random position in a 3.5x4 unit square
+            float rand1 = Random.Range(-3.5f, 3.5f);
+            float rand2 = Random.Range(-1.5f, 1.5f);
+            Vector3 newPos = new Vector3(rand1, transform.position.y , rand2);
+            transform.position = newPos;
+            Debug.Log(targetHits + " is number of target hits");
         }
     }
 }
