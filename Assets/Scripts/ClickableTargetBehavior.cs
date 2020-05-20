@@ -11,19 +11,19 @@ using UnityEngine.UI;
 [RequireComponent(typeof(TimerBehavior))]
 public class ClickableTargetBehavior : MonoBehaviour
 {
-    /*
+    /**
      * The amount of hits a target has taken
      */
     public int targetHits;
-    /*
+    /**
      * The maximum amount of hits a target can take
      */
     public int maxTargetHits;
-    /*
+    /**
      * The reference to the Scorekeeper object
      */
     public ScorekeepingBehavior scorekeeper;
-    /*
+    /**
      * The reference to the Timer object
      */
     public TimerBehavior timer;

@@ -8,19 +8,19 @@ using UnityEngine.UI;
  */
 public class TimerBehavior : MonoBehaviour
 {
-    /*
+    /**
      * The amount of time that has passed
      */
     private float time;
-    /*
+    /**
      * The amount of time that has passed after a cutoff
      */
     private float timeAfterCutoff;
-    /*
+    /**
      * The reference to a target object
      */
     private ClickableTargetBehavior target;
-    /*
+    /**
      * The reference to a text UI object to display the timer
      */
     public Text timer;

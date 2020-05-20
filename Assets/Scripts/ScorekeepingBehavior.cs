@@ -8,11 +8,11 @@ using UnityEngine.UI;
  */
 public class ScorekeepingBehavior : MonoBehaviour
 {
-    /*
+    /**
      * The current score
      */
     public float score = 0.0f;
-    /*
+    /**
      * The current text refernce
      */
     public Text text;

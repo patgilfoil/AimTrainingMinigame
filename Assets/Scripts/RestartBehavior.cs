@@ -9,11 +9,11 @@ using UnityEngine.UI;
  */
 public class RestartBehavior : MonoBehaviour
 {
-    /*
+    /**
      * The current score
      */
     public GameObject restartButton;
-    /*
+    /**
      * The current score
      */
     public ClickableTargetBehavior target;
