@@ -20,8 +20,8 @@ Touch       - Hit target
 
 ## WebGL Player
 
-https://patgilfoil.github.io/unityproj/Game/
+https://patgilfoil.github.io/AimTrainingMinigame/Game/
 
 ## Documentation
 
-https://patgilfoil.github.io/unityproj/Docs/
+https://patgilfoil.github.io/AimTrainingMinigame/Docs/
